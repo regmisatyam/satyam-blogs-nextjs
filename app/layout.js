@@ -5,7 +5,7 @@ import ThemeInitializer from './web_components/ThemeInitializer';
 import ClientLayout from './ClientLayout';
 import { FrontUI } from './context/FrontPageUiContext';
 import { Front2UI } from './context/FrontPage2Context';
-// import BlogCardImg from './page_components/BlogCardImg';
+import { Front3UI } from './context/FrontPage3Context';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,17 +18,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-      <ThemeProvider>
+        <ThemeProvider>
           <ThemeInitializer />
           <ClientLayout>
-          
-          <FrontUI>
-            <Front2UI>
-                 {children}
-            </Front2UI>
+            <FrontUI>
+              <Front2UI>
+                <Front3UI>
+                  {children}
+                </Front3UI>
+              </Front2UI>
             </FrontUI>
-            {/* <BlogCardImg /> */}
-   
           </ClientLayout>
         </ThemeProvider>
       </body>

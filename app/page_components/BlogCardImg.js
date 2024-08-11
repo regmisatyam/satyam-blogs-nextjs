@@ -41,13 +41,14 @@ const BlogCardImg = () => {
 				  objectFit="cover"
 				  className="absolute inset-0 rounded-md"
 				  loading='lazy'
+				  draggable="false"
 				/>
 				
 				<div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
 				  <Link
 					rel="noopener noreferrer"
 					href={`/category/` + blog.category}
-					className="px-3 py-2 text-xs font-semibold tracking-wider uppercase text-white dark:bg-violet-600"
+					className="px-3 py-2 text-xs font-semibold tracking-wider uppercase text-white bg-gradient-to-r from-cyan-500 to-blue-500"
 				  >
 					{blog.category}
 				  </Link>
@@ -55,10 +56,10 @@ const BlogCardImg = () => {
 					<span className="leading-none uppercase">{blog.date}</span>
 				  </div>
 				</div>
-				<h2 className="z-10 p-3 bg-slate-900 opacity-85 w-full rounded-b-md">
+				<h2 className="z-10 p-3 bg-gradient-to-r from-cyan-500 to-blue-500 opacity-85 w-full rounded-b-md">
 				  <Link
 					href={blog.slug}
-					className="font-medium text-md hover:text-sky-500 text-white"
+					className="font-medium text-md hover:text-black text-white"
 				  >
 					{blog.title}
 				  </Link>

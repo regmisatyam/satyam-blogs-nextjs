@@ -66,3 +66,6 @@ textarea{
 .bg{
   background-color: var(--bg-color);
 }
+.min-h-17 {
+  min-height: 4.5rem;
+}
