@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define CSS variables for light and dark themes */
+:root {
+  --bg-color: #ededed; /* Light background color */
+  --text-color: #000000; /* Light text color */
+  --containers-color: #fff;
+  --bg-nav: #fff;
+  --link:#00a4db;
+
+  --ld-bg: #000;
+}
+
+.dark-mode {
+  --bg-color: #0f0f0f; /* Dark background color */
+  --text-color: #f7fafc; /* Dark text color */
+  --containers-color: #1a202c;
+  --bg-nav: #1a202c;
+
+  --ld-bg:#fff;
+}
+
+/* Apply CSS variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+  @apply font-sans;
+}
+
+/* Define default styles for the navbar and other components */
+nav {
+  background-color: var(--bg-nav);
+}
+
+a {
+  color: var(--text-color);
+}
+.text{
+  color: var(--text-color);
+}
+.containers{
+  background-color: var(--containers-color);
+  border: 1px solid #fff;
+}
+input {
+  border: 1px solid var(--bg-color);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+textarea{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.w-45{
+  width: 30%;
+}
+.link{
+  color: var(--link);
+}
+.ld-bg{
+  background-color: var(--ld-bg);
+}
+.bg{
+  background-color: var(--bg-color);
+}
