@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   const currentDate = new Date().getFullYear();
@@ -17,11 +18,11 @@ const Footer = () => {
             <a href="https://twitter.com/@SatyamRegmiX" className="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@SatyamRegmiX</a>
           </p>
           <p className="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">
-            <a href="/privacy-policy/" className="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+            <Link href="/privacy-policy/" className="text-gray-500 ml-1" rel="noopener noreferrer">Privacy Policy</Link>
           </p>
-          <p className="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">
+          {/* <p className="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">
             <a href="/terms-conditions/" className="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">Terms and Conditions</a>
-          </p>
+          </p> */}
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
             <a target="_blank" href="https://fb.com/regmi.satyam" className="text-gray-400">
               <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
