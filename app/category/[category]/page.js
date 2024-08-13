@@ -3,6 +3,7 @@
 import { notFound } from 'next/navigation';
 import { fetchBlogsByCategory } from '../../lib/api';
 import BlogCard from '../../page_components/BlogCard';
+import NotFound from '../../page_components/NotFound';
 
 const CategoryPage = async ({ params }) => {
   const { category } = params;
@@ -28,7 +29,7 @@ const CategoryPage = async ({ params }) => {
     
     );
   } catch (error) {
-    return <p className="text-red-500">Error fetching blogs: {error.message}</p>;
+    return  <NotFound />;
   }
 };
 

@@ -86,11 +86,7 @@ const Navbar = () => {
                 Home
               </Link>
             </li>
-            <li>
-              <Link href="https://satyamregmi.com.np" onClick={handleLinkClick} className="hover:text-gray-400 font-bold" target="_blank" >
-                Main
-              </Link>
-            </li>
+           
             <li>
               <Link href="/category/Updates" onClick={handleLinkClick} className="hover:text-gray-400 font-bold">
                 Updates
@@ -116,6 +112,11 @@ const Navbar = () => {
                 Mobile
               </Link>
             </li> */}
+             <li>
+              <Link href="https://satyamregmi.com.np" onClick={handleLinkClick} className="hover:text-gray-400 font-bold" target="_blank" >
+                Main
+              </Link>
+            </li>
           </ul>
 
           {isMobileMenuOpen && (
