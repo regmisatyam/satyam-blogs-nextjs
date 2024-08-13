@@ -1,7 +1,7 @@
 import Image from "next/image";
 const MediumAd = () => {
     return (
-        <div className="snap-x flex overflow-x-scroll md:mx-20 md:my-10 items-center">
+        <div className="snap-x flex no-scrollbar overflow-x-scroll md:mx-20 md:my-10 items-center">
             <a href="https://play.google.com/store/apps/details?id=com.satyamregmi.AllNepaliNews"
                 target="_blank"
                 className=" mx-3 snap-center">

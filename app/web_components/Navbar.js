@@ -87,8 +87,8 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/about" onClick={handleLinkClick} className="hover:text-gray-400 font-bold">
-                About
+              <Link href="https://satyamregmi.com.np" onClick={handleLinkClick} className="hover:text-gray-400 font-bold" target="_blank" >
+                Main
               </Link>
             </li>
             <li>
@@ -97,25 +97,25 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/category/News" onClick={handleLinkClick} className="hover:text-gray-400 font-bold">
-                News
+              <Link href="/category/Technology" onClick={handleLinkClick} className="hover:text-gray-400 font-bold">
+                Technology
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/category/Gadgets" onClick={handleLinkClick} className="hover:text-gray-400 font-bold">
                 Gadgets
               </Link>
-            </li>
+            </li> */}
             <li>
-              <Link href="/category/fun-facts" onClick={handleLinkClick} className="hover:text-gray-400 font-bold">
+              <Link href="/category/FunFacts" onClick={handleLinkClick} className="hover:text-gray-400 font-bold">
                 Fun Facts
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/category/Mobiles" onClick={handleLinkClick} className="hover:text-gray-400 font-bold">
                 Mobile
               </Link>
-            </li>
+            </li> */}
           </ul>
 
           {isMobileMenuOpen && (
