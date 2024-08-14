@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const BlogCardImgThird = () => {
     const context3 = useFrontUi3Context();
-    console.log('Context:', context3); // Debugging log
+    // console.log('Context:', context3); // Debugging log
 
     if (!context3) {
         return <p>Context is not available</p>;
@@ -44,7 +44,7 @@ const BlogCardImgThird = () => {
                                     <span class="mb-2 flex items-center text-sm font-semibold">
                                     {blog.category}</span>
                                     <h3 class="mt-4 mb-3 text-xl font-semibold xl:text-2xl">{blog.title}</h3>
-                                    <p class="mb-4 text-base font-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam tempore officiis. Lorem, ipsum dolor.</p>
+                                    <p class="mb-4 text-base font-light">{blog.excerpt}</p>
                                     <span class="inline-block cursor-pointer select-none rounded-full border border-gray-800 bg-gray-800 px-2 py-1 text-center align-middle text-sm font-semibold leading-normal text-white no-underline shadow-sm"> Read More </span>
                                 </div>
                             </Link>

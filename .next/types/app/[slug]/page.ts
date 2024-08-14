@@ -1,4 +1,4 @@
-// File: /workspaces/satyam-blogs-nextjs/app/[slug]/page.js
+// File: /Users/satyamregmi/Desktop/teletechnepal.com/nextJs/sbp/app/[slug]/page.js
 import * as entry from '../../../../app/[slug]/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

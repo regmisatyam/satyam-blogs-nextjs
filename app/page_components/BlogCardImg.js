@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const BlogCardImg = () => {
 	const context = useFrontUi2Context();
-	console.log('Context:', context); // Debugging log
+	// console.log('Context:', context); // Debugging log
 
 	if (!context) {
 		return <p>Context is not available</p>;

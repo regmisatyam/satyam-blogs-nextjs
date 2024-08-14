@@ -26,6 +26,12 @@ export default {
           port: '', // Optional, specify if your domain uses a non-standard port
           pathname: '/**', // Optional, specify the path pattern for images
         },
+        {
+          protocol: 'https',
+          hostname: "unsplash.it",
+          port: '', // Optional, specify if your domain uses a non-standard port
+          pathname: '/**', // Optional, specify the path pattern for images
+        },
       ],
     },
   };

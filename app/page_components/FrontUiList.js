@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const FrontUiList = () => {
   const context = useFrontUiContext();
-  console.log('Context:', context); // Debugging log
+  // console.log('Context:', context); // Debugging log
 
   if (!context) {
     return <p>Context is not available</p>;

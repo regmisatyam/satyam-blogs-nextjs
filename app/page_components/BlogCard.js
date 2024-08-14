@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const BlogCard = ({ blog }) => {
-  const content = blog.excerpt || ''; // Use the 'rendered' field if it's available
+  const excerpt = blog.excerpt || ''; // Use the 'rendered' field if it's available
 
   // For images: adding Links
   const imageLink = "https://blogs.satyamregmi.com.np/uploads/";
@@ -48,13 +48,13 @@ const BlogCard = ({ blog }) => {
           )}
         </div>
 
-        {/* Content */}
-        {blog.content && (
+        {/* Excerpt */}
+        {blog.excerpt && (
           <div className="mt-4 text">
             <div
-              className="text" // Adjust this class as needed
-              dangerouslySetInnerHTML={{ __html: content }}
+              className="text"
             />
+            {blog.excerpt}
           </div>
         )}
 

@@ -40,6 +40,7 @@ body {
   color: var(--text-color);
   transition: background-color 0.3s, color 0.3s;
   @apply font-sans;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Define default styles for the navbar and other components */
@@ -77,6 +78,9 @@ textarea{
 }
 .bg{
   background-color: var(--bg-color);
+}
+.bg-container{
+  background-color: var(--containers-color);
 }
 .min-h-17 {
   min-height: 4.5rem;

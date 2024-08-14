@@ -5,6 +5,7 @@ import { useTheme } from '../context/ThemeContex';
 import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { FaSun, FaMoon, FaBars, FaTimes } from 'react-icons/fa';
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Navbar = () => {
   const { isDarkMode, toggleTheme } = useTheme();
@@ -113,8 +114,8 @@ const Navbar = () => {
               </Link>
             </li> */}
              <li>
-              <Link href="https://satyamregmi.com.np" onClick={handleLinkClick} className="hover:text-gray-400 font-bold" target="_blank" >
-                Main
+              <Link href="https://satyamregmi.com.np" onClick={handleLinkClick} className="hover:text-gray-400 font-bold flex items-center" target="_blank" >
+                Main <FaExternalLinkAlt className="ml-1"/>
               </Link>
             </li>
           </ul>
